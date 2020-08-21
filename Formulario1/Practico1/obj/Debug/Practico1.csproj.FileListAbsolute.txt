@@ -1,0 +1,10 @@
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\bin\Debug\Practico1.exe.config
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\bin\Debug\Practico1.exe
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\bin\Debug\Practico1.pdb
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.csprojAssemblyReference.cache
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.Formulario1.resources
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.Properties.Resources.resources
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.csproj.GenerateResource.cache
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.csproj.CoreCompileInputs.cache
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.exe
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Formulario1\Practico1\obj\Debug\Practico1.pdb
