@@ -16,5 +16,6 @@ namespace Practico2
         {
             InitializeComponent();
         }
+
     }
 }
