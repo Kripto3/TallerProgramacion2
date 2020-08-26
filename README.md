@@ -5,3 +5,10 @@ En TP2 se enfoca en el desarrollo de aplicaciones para escritorio, utilizacion l
 Implementacion de base de datos con SQL SERVER. 
 Lenguaje de desarrollo : C# 
 Desarrollo a partir de Windows Forms.
+
+Actualizacion de practicos:
+
+> Practico 1 (Formulario)
+- Crear un formulario basico que concatena dos campos de un textbox.
+> Practico 2
+- Crear un formulario con validaciones de campos, ademas incluye mensajes para el usuario utilizando MessageBox para todas las acciones en el formulario.
