@@ -37,7 +37,7 @@
             this.TApellido = new System.Windows.Forms.TextBox();
             this.TNombre = new System.Windows.Forms.TextBox();
             this.BGuardar = new System.Windows.Forms.Button();
-            this.BModificar = new System.Windows.Forms.Button();
+            this.BEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LNya
@@ -45,9 +45,9 @@
             this.LNya.AutoSize = true;
             this.LNya.Location = new System.Drawing.Point(34, 29);
             this.LNya.Name = "LNya";
-            this.LNya.Size = new System.Drawing.Size(92, 13);
+            this.LNya.Size = new System.Drawing.Size(95, 13);
             this.LNya.TabIndex = 0;
-            this.LNya.Text = "Nombre y Apellido";
+            this.LNya.Text = "Nombre y Apellido:";
             // 
             // LDni
             // 
@@ -120,21 +120,22 @@
             this.BGuardar.UseVisualStyleBackColor = true;
             this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
-            // BModificar
+            // BEliminar
             // 
-            this.BModificar.Location = new System.Drawing.Point(118, 203);
-            this.BModificar.Name = "BModificar";
-            this.BModificar.Size = new System.Drawing.Size(75, 23);
-            this.BModificar.TabIndex = 9;
-            this.BModificar.Text = "Modificar";
-            this.BModificar.UseVisualStyleBackColor = true;
+            this.BEliminar.Location = new System.Drawing.Point(118, 203);
+            this.BEliminar.Name = "BEliminar";
+            this.BEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BEliminar.TabIndex = 9;
+            this.BEliminar.Text = "Eliminar";
+            this.BEliminar.UseVisualStyleBackColor = true;
+            this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 258);
-            this.Controls.Add(this.BModificar);
+            this.Controls.Add(this.BEliminar);
             this.Controls.Add(this.BGuardar);
             this.Controls.Add(this.TNombre);
             this.Controls.Add(this.TApellido);
@@ -163,7 +164,7 @@
         private System.Windows.Forms.TextBox TApellido;
         private System.Windows.Forms.TextBox TNombre;
         private System.Windows.Forms.Button BGuardar;
-        private System.Windows.Forms.Button BModificar;
+        private System.Windows.Forms.Button BEliminar;
     }
 }
 

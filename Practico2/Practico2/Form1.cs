@@ -37,18 +37,53 @@ namespace Practico2
 
         private void BGuardar_Click(object sender, EventArgs e)
         {
+            DialogResult ask; // equivalente a MsgBoxResult de VB
             var formularioValido = ValidarFormulario();
 
             if (!formularioValido)
             {
-                MessageBox.Show("Debe completar todos los campos.", "Error");
+                MessageBox.Show("Debe completar todos los campos.", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                var nombreCompleto = $"{this.TNombre.Text} {this.TApellido.Text}";
-                this.LModificar.Text = nombreCompleto;
+               ask = MessageBox.Show("Seguro que desea insertar un nuevo Cliente ?", "Confirmar insercion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if ((int)ask == 6)
+                {
+                    var nombreCompleto = $"{this.TNombre.Text} {this.TApellido.Text}";
+                    this.LModificar.Text = nombreCompleto;
+                    MessageBox.Show($"El Cliente: {nombreCompleto} se insertó correctamente.","Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+
+                }
+               
             }
         }
+
+        private void BEliminar_Click(object sender, EventArgs e)
+        {
+            var cliente = $"{this.LModificar.Text}";
+            if (!string.IsNullOrEmpty(cliente))
+            {
+                DialogResult ask;
+
+                ask = MessageBox.Show($"Esta apunto de eliminar el Cliente: {cliente}", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+
+                if ((int)ask == 6)
+                {
+                    MessageBox.Show($"El Cliente: {cliente} se eliminó correctamente.", "Eliminar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormulario();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No posee Clientes cargados.", "Eliminar",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+
+        #region Metodos privados
         private bool ValidarFormulario()
         {
             if (String.IsNullOrEmpty(this.TNombre.Text.Trim()) ||
@@ -61,7 +96,6 @@ namespace Practico2
 
             return true;
         }
-
         private bool EsUnaCadena(KeyPressEventArgs e)
         {
             bool esCadena;
@@ -101,6 +135,15 @@ namespace Practico2
             }
             return esNumero;
         }
+        private void LimpiarFormulario()
+        {
+            TDni.Text = string.Empty;
+            TNombre.Text = string.Empty;
+            TApellido.Text = string.Empty;
+            LModificar.Text = string.Empty;
+        }
+        #endregion
+
 
 
     }
