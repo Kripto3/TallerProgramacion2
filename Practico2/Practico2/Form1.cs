@@ -51,9 +51,9 @@ namespace Practico2
         }
         private bool ValidarFormulario()
         {
-            if (String.IsNullOrEmpty(this.TDni.Text) ||
-                String.IsNullOrEmpty(this.TApellido.Text) ||
-                String.IsNullOrEmpty(this.TNombre.Text)
+            if (String.IsNullOrEmpty(this.TNombre.Text.Trim()) ||
+                String.IsNullOrEmpty(this.TApellido.Text.Trim()) ||
+                String.IsNullOrEmpty(this.TNombre.Text.Trim())
                 )
             {
                 return false;
