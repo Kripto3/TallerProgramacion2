@@ -92,6 +92,7 @@
             this.TDni.Name = "TDni";
             this.TDni.Size = new System.Drawing.Size(92, 20);
             this.TDni.TabIndex = 5;
+            this.TDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TDni_KeyPress);
             // 
             // TApellido
             // 
@@ -99,6 +100,7 @@
             this.TApellido.Name = "TApellido";
             this.TApellido.Size = new System.Drawing.Size(92, 20);
             this.TApellido.TabIndex = 6;
+            this.TApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TApellido_KeyPress);
             // 
             // TNombre
             // 
@@ -106,6 +108,7 @@
             this.TNombre.Name = "TNombre";
             this.TNombre.Size = new System.Drawing.Size(92, 20);
             this.TNombre.TabIndex = 7;
+            this.TNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TNombre_KeyPress);
             // 
             // BGuardar
             // 

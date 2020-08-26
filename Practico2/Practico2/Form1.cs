@@ -17,5 +17,62 @@ namespace Practico2
             InitializeComponent();
         }
 
+        
+
+        private void TDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = EsUnNumero(e);
+        }
+
+        private void TApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = EsUnaCadena(e);
+        }
+
+        private void TNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = EsUnaCadena(e);
+        }
+
+
+        private bool EsUnaCadena(KeyPressEventArgs e)
+        {
+            bool esCadena;
+
+            if (   Char.IsLetter(e.KeyChar)
+                || Char.IsControl(e.KeyChar)
+                || Char.IsControl(e.KeyChar)
+                || Char.IsControl(e.KeyChar)
+                || Char.IsSeparator(e.KeyChar)
+               )
+            {
+                esCadena = false;
+            }
+            else
+            {
+                esCadena = true;
+            }
+            return esCadena;
+        }
+        private bool EsUnNumero(KeyPressEventArgs e)
+        {
+            bool esNumero;
+
+
+            if (   Char.IsDigit(e.KeyChar) 
+                || Char.IsControl(e.KeyChar) 
+                || Char.IsControl(e.KeyChar)
+                || Char.IsControl(e.KeyChar)
+                || Char.IsSeparator(e.KeyChar)
+               )
+            {
+                esNumero = false;
+            }
+            else
+            {
+                esNumero = true;
+            }
+            return esNumero;
+        }
     }
 }
