@@ -35,11 +35,38 @@ namespace Practico2
         }
 
 
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+            var formularioValido = ValidarFormulario();
+
+            if (!formularioValido)
+            {
+                MessageBox.Show("Debe completar todos los campos.", "Error");
+            }
+            else
+            {
+                var nombreCompleto = $"{this.TNombre.Text} {this.TApellido.Text}";
+                this.LModificar.Text = nombreCompleto;
+            }
+        }
+        private bool ValidarFormulario()
+        {
+            if (String.IsNullOrEmpty(this.TDni.Text) ||
+                String.IsNullOrEmpty(this.TApellido.Text) ||
+                String.IsNullOrEmpty(this.TNombre.Text)
+                )
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         private bool EsUnaCadena(KeyPressEventArgs e)
         {
             bool esCadena;
 
-            if (   Char.IsLetter(e.KeyChar)
+            if (Char.IsLetter(e.KeyChar)
                 || Char.IsControl(e.KeyChar)
                 || Char.IsControl(e.KeyChar)
                 || Char.IsControl(e.KeyChar)
@@ -59,8 +86,8 @@ namespace Practico2
             bool esNumero;
 
 
-            if (   Char.IsDigit(e.KeyChar) 
-                || Char.IsControl(e.KeyChar) 
+            if (Char.IsDigit(e.KeyChar)
+                || Char.IsControl(e.KeyChar)
                 || Char.IsControl(e.KeyChar)
                 || Char.IsControl(e.KeyChar)
                 || Char.IsSeparator(e.KeyChar)
@@ -75,10 +102,6 @@ namespace Practico2
             return esNumero;
         }
 
-        private void BGuardar_Click(object sender, EventArgs e)
-        {
-            var nombreCompleto = $"{this.TNombre.Text} {this.TApellido.Text}";
-            this.LModificar.Text = nombreCompleto;
-        }
+
     }
 }
