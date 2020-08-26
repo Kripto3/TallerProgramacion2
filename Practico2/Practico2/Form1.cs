@@ -74,5 +74,11 @@ namespace Practico2
             }
             return esNumero;
         }
+
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+            var nombreCompleto = $"{this.TNombre.Text} {this.TApellido.Text}";
+            this.LModificar.Text = nombreCompleto;
+        }
     }
 }
