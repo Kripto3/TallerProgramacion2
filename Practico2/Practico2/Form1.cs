@@ -15,6 +15,7 @@ namespace Practico2
         public Form1()
         {
             InitializeComponent();
+            pictureBox1.Image = Properties.Resources.male_img;
         }
 
         
@@ -82,6 +83,26 @@ namespace Practico2
 
         }
 
+        private void RBVaron_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.male_img;
+
+        }
+        private void RBMujer_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.female_img;
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         #region Metodos privados
         private bool ValidarFormulario()
@@ -96,6 +117,11 @@ namespace Practico2
 
             return true;
         }
+        /// <summary>
+        /// Indica si la tecla presionada es una cadena retornando un valor bool
+        /// </summary>
+        /// <param name="e">evento obtenido al presionar una tecla</param>
+        /// <returns>Verdadero/falso segun la condicion</returns>
         private bool EsUnaCadena(KeyPressEventArgs e)
         {
             bool esCadena;
@@ -135,6 +161,9 @@ namespace Practico2
             }
             return esNumero;
         }
+        /// <summary>
+        /// Limpia todos los campos del formulario
+        /// </summary>
         private void LimpiarFormulario()
         {
             TDni.Text = string.Empty;
@@ -142,9 +171,8 @@ namespace Practico2
             TApellido.Text = string.Empty;
             LModificar.Text = string.Empty;
         }
+
+
         #endregion
-
-
-
     }
 }

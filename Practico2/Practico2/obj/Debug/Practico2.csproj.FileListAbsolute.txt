@@ -8,3 +8,4 @@ C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Practico2
 C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Practico2\Practico2\obj\Debug\Practico2.csproj.CoreCompileInputs.cache
 C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Practico2\Practico2\obj\Debug\Practico2.exe
 C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Practico2\Practico2\obj\Debug\Practico2.pdb
+C:\Users\alejandro.jimenez\Documents\Ale-Proyectos\TallerProgramacion2\Practico2\Practico2\obj\Debug\Practico2.MDIParent1.resources
